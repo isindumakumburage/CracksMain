@@ -1,0 +1,91 @@
+                                     
+       / ____|              | |        |  \/  |     (_)      
+      | |     _ __ __ _  ___| | _____  | \  / | __ _ _ _ __  
+      | |    | '__/ _` |/ __| |/ / __| | |\/| |/ _` | | '_ \ 
+      | |____| | | (_| | (__|   <\__ \ | |  | | (_| | | | | |
+       \_____|_|  \__,_|\___|_|\_\___/ |_|  |_|\__,_|_|_| |_|
+       
+
+Welcome to Cracksmain, an automated penetration testing tool designed specifically for conducting security assessments on the APIIT 
+Lanka Learning Management System (LMS). Developed in response to the critical need for streamlined security testing processes, 
+Cracksmain integrates various cybersecurity tools to automate the entire penetration testing lifecycle.
+
+
+Purpose:
+The primary purpose of Cracksmain is to facilitate comprehensive security assessments of the APIIT LMS, ensuring that it meets stringent 
+compliance requirements and maintains robust defenses against potential threats. By automating the penetration testing process, 
+Cracksmain aims to enhance the efficiency and effectiveness of security assessments while reducing the manual effort and time required 
+for testing.
+       
+       !!!This guide will help you understand how to use each feature of the program!!!
+       
+       
+       ***WE HIGHLY RECOMMEND USING KALI LINUX TO RUN THIS PROGRAM DUE THE PRE-AVAILABILITY OF THE TOOLS***
+
+
+1. Authentication:
+   - When you start the program, you will be prompted to log in.
+   - You have 3 attempts to enter the correct credentials.
+   - Depending on your role (Admin or Super Admin), you will have access to different functionalities.
+        > Super Admin Privileges - r,s,v,e,h,q 
+        > Admin Privileges       - r,s,v,h,q 
+        
+
+2. Main Menu Options:
+   - After logging in, you will see the main menu with the following options:
+     r - Reconnaissance
+     s - Scanning & Service Enumeration
+     v - Vulnerability Scanning
+     e - Exploitation (***ONLY THE SUPER ADMIN CAN ACCESS THE EXPLOITATION***)
+     h - Help
+     q - Quit the program
+
+
+3. Reconnaissance:
+   - Select 'r' to perform reconnaissance on a domain.
+   - You will be prompted to enter a domain name.
+   - The tool will fetch domain information and display it.
+   - You can choose to save the output to a file.
+
+
+4. Scanning & Service Enumeration:
+   - Select 's' to access scanning and service enumeration options.
+   - You can choose between Port Scanning and Service Enumeration:
+     1 - Port Scanning: Enter an IP address or domain name to scan ports.
+     2 - Service Enumeration: Enter an IP address or domain name to enumerate services.
+   - The tool will display the results and prompt you to save the output to a file.
+   - You can choose to perform another scan or return to the main menu.
+
+
+5. Vulnerability Scanning:
+   - Select 'v' to perform vulnerability scanning.
+   - Enter an IP address or domain name to scan for vulnerabilities.
+   - The tool will display the results and prompt you to save the output to a file.
+
+
+6. Vulnerability Filteration
+   -specify which seveirty level's vulnerabilities you wanna view by entering its name (Critical/High/Medium/Low)
+   -You can choose to view another seveity level after checking one. Program won't return till you specify  that you dont want to check anymore severity levels
+   -you can save vulnerabilities of each seveirty level in separate files if you want 
+
+
+7. Exploitation (Password Cracking):
+   - Select 'e' to access exploitation options.
+   - You can choose between capturing login requests and cracking passwords:
+     1 - Capture Login Requests: This option will monitor and capture login attempts.
+     
+     ***Watch this video to get a further understanding abould how to use Burpsuite to capture login requests https://www.youtube.com/watch?v=Nr2fYpStshA ***
+     
+     2 - Crack Passwords: This option will attempt to crack passwords using a predefined list.
+
+
+8. Quitting the Program:
+   - Select 'q' to quit the program.
+   - The program will exit and return to the terminal.
+
+
+Disclaimer:
+   - Ensure you have the necessary permissions to perform scans and enumerations on the target systems.
+   - Use this tool responsibly and only on systems you have permission to test.
+
+***For further assistance, refer to the program's documentation or contact the IT department.***
